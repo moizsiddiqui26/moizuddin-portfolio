@@ -63,6 +63,99 @@
       header{flex-direction:column;gap:.8rem}
       .hero h1{font-size:2rem}
     }
+    .research-section {
+  padding: 60px 20px;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #38bdf8;
+}
+
+.research-card {
+  max-width: 900px;
+  margin: auto;
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.research-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.journal {
+  font-style: italic;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.badges {
+  margin-bottom: 15px;
+}
+
+.badge {
+  display: inline-block;
+  background: #1e293b;
+  color: #38bdf8;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.research-desc {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.research-points {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.research-points li {
+  margin-bottom: 8px;
+}
+
+.research-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
   </style>
 </head>
 <body>
@@ -81,7 +174,7 @@
     <div class="hero-text">
       <img src="profile.jpg" alt="Moizuddin Siddiqui">
       <h1>Hi, I'm Moizuddin 👋</h1>
-      <p>Final-year Computer Science Engineering student passionate about building full-stack web applications and learning modern technologies. Skilled in PHP, MySQL, JavaScript, and Python with a strong foundation in DSA & OOPs.</p>
+      <p>Final-Year CSE Student | Machine Learning & Full-Stack Developer.<br>• Built and deployed ML applications <br>• Published research in IJARESM <br>• Infosys ML Certified</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn">View My Work</a>
         <a href="Moizuddin_Siddiqui_Resume.pdf" class="ghost" download>Download Resume</a>
@@ -92,17 +185,7 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <div class="about-grid">
-      <div class="about-item">
-        <h3>🎓 Education</h3>
-        <p>B.Tech in Computer Science & Engineering<br>MGM’s College of Engineering, Nanded (2022 – Present)<br>CGPA: 6.8</p>
-      </div>
-      <div class="about-item">
-        <h3>💼 Objective</h3>
-        <p>Seeking a challenging internship or entry-level position to apply my knowledge in software development, improve system design skills, and contribute to impactful projects.</p>
-      </div>
-      <div class="about-item">
-        <h3>📍 Location</h3>
-        <p>Nanded, Maharashtra</p>
+     <p> I am a final-year B.Tech Computer Science student with strong expertise in Machine Learning, Python, and Full-Stack Development. I have built and deployed real-world ML applications and co-authored a peer-reviewed research paper on heart disease risk prediction published in IJARESM. I am passionate about applying data-driven solutions to real-world problems and actively seeking entry-level roles or internships in ML and software development.</p>
       </div>
     </div>
   </section>
@@ -111,9 +194,9 @@
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project">
-        <h3>Personalized Heart Disease Risk Prediction Model.</h3>
-        <p>A quick and easy Heart Disease Risk Prediction tool to estimate your likelihood of heart disease using key health indicators.</p>
-        <p class="tech">Tech Stack: Python, Machine Learning (Scikit-learn), Flask, HTML, CSS, JavaScript, Hugging Face Spaces</p>
+        <h3>Heart Disease Risk Prediction System.</h3>
+        <p>An ML-based web application that predicts the risk of heart disease using patient health parameters.</p>
+        <p class="tech">Tech Stack: Python, Scikit-learn, Flask, HTML, CSS, JavaScript, Hugging Face Spaces</p>
         <a href="https://whefjhgsdcjwgugf-risk-detector-vx9.hf.space/">Live Demo</a>
         <a href="#">GitHub</a>
       </div>
@@ -133,6 +216,41 @@
       </div>
     </div>
   </section>
+<section id="research" class="research-section">
+  <h2 class="section-title">Research & Publications</h2>
+
+  <div class="research-card">
+    <h3>Heart Disease Risk Prediction</h3>
+
+    <p class="journal">
+      International Journal of All Research Education & Scientific Methods (IJARESM)
+    </p>
+
+    <div class="badges">
+      <span class="badge">Peer-Reviewed</span>
+      <span class="badge">Impact Factor 8.536</span>
+      <span class="badge">Dec 2025</span>
+    </div>
+
+    <p class="research-desc">
+      Published a machine learning–based heart disease risk prediction system using
+      stacking ensemble models and lifestyle factors. Achieved accuracy up to <b>91.94%</b>
+      and deployed the model as a web application.
+    </p>
+
+    <ul class="research-points">
+      <li>Stacking Ensemble ML approach</li>
+      <li>Feature selection on lifestyle & clinical data</li>
+      <li>Model evaluation using Accuracy, Precision, Recall & F1-score</li>
+      <li>Deployed as a user-friendly web application</li>
+    </ul>
+
+    <div class="research-links">
+      <a href="Heart_Research_Paper.pdf" target="_blank" class="btn">View Paper</a>
+      <a href="Mr_Moizuddin_Siddiqui.pdf" target="_blank" class="btn btn-outline">Publication Certificate</a>
+    </div>
+  </div>
+</section>
 
   <section id="skills" class="skills">
     <h2>Skills & Tools</h2>
@@ -156,13 +274,19 @@
     <h2>Certificates</h2>
     <div class="certificate-grid">
       <div class="certificate">
+        <img src="ML_Certificate.jpg" alt="ML Certificate">
+        <p>Infosys Springboard – Machine Learning Certificate</p>
+        <a href="ML_Certificate.pdf" download>View Document</a>
+      </div>
+    <div class="certificate-grid">
+      <div class="certificate">
         <img src="Java_Foundation_Certificate.jpg" alt="Java Foundation Certificate">
-        <p>Java Foundation Program – Infosys Springboard (Dec 2024)</p>
+        <p>Java Foundation Program – Infosys Springboard </p>
         <a href="Java_Foundation_Certificate.pdf" download>View Document</a>
       </div>
       <div class="certificate">
         <img src="Python_Foundation_Certificate.jpg" alt="Python Foundation Certificate">
-        <p>Python Foundation Program – Infosys Springboard (Oct 2024)</p>
+        <p>Python Foundation Program – Infosys Springboard </p>
         <a href="Python_Foundation_Certificate.pdf" download>View Document</a>
       </div>
     </div>
@@ -198,4 +322,5 @@
   </script>
 </body>
 </html>
+
 
