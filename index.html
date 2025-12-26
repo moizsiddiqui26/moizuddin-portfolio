@@ -220,29 +220,56 @@
     }
 
     /* ===== CERTIFICATES ===== */
-    .certificate-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:1.5rem;
-      margin-top:1.5rem;
-    }
+/* ===== CERTIFICATES ===== */
+.certificates {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
 
-    .certificate{
-      background:rgba(255,255,255,0.03);
-      padding:1.2rem;
-      border-radius:12px;
-      text-align:center;
-    }
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
 
-    .certificate h3{
-      font-size:1.05rem;
-      margin-bottom:.3rem;
-    }
+.certificate {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .certificate p{
-      color:var(--muted);
-      font-size:.9rem;
-    }
+.certificate:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.certificate img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.certificate p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.certificate a {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
 
     /* ===== CONTACT ===== */
     .contact-grid{
@@ -418,24 +445,41 @@
 
   <!-- ================= CERTIFICATES ================= -->
  <section id="certificates" class="certificates">
-    <h2>Certificates</h2>
-    <div class="certificate-grid">
-      <div class="certificate">
-        <img src="ML_Certificate.jpg" alt="ML Certificate">
-        <p>Infosys Springboard – Machine Learning Certificate</p>
-        <a href="ML_Certificate.pdf" download>View Document</a>
-        <img src="Mr. Moizuddin Siddiqui.jpg" alt="IJARESM Research Publication Certificate">
-        <p>IJARESM Research Publication Certificate</p>
-        <a href="Mr. Moizuddin Siddiqui.pdf" download>View Document</a>
-        <img src="Java_Foundation_Certificate.jpg" alt="Java Foundation Certificate">
-        <p>Java Foundation Program – Infosys Springboard </p>
-        <a href="Java_Foundation_Certificate.pdf" download>View Document</a>
-\        <img src="Python_Foundation_Certificate.jpg" alt="Python Foundation Certificate">
-        <p>Python Foundation Program – Infosys Springboard </p>
-        <a href="Python_Foundation_Certificate.pdf" download>View Document</a>
-      </div>
+  <h2>Certificates</h2>
+
+  <div class="certificate-grid">
+
+    <!-- Machine Learning Certificate -->
+    <div class="certificate">
+      <img src="ML_Certificate.jpg" alt="Machine Learning Certificate">
+      <p>Machine Learning – Infosys Springboard</p>
+      <a href="ML_Certificate.pdf" target="_blank">View Certificate</a>
     </div>
-  </section>
+
+    <!-- Research Publication Certificate -->
+    <div class="certificate">
+      <img src="Mr. Moizuddin Siddiqui.jpg" alt="IJARESM Research Publication Certificate">
+      <p>Research Publication – IJARESM Journal</p>
+      <a href="Mr. Moizuddin Siddiqui.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Java Certificate -->
+    <div class="certificate">
+      <img src="Java_Foundation_Certificate.jpg" alt="Java Foundation Certificate">
+      <p>Java Foundation Program – Infosys Springboard</p>
+      <a href="Java_Foundation_Certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Python Certificate -->
+    <div class="certificate">
+      <img src="Python_Foundation_Certificate.jpg" alt="Python Foundation Certificate">
+      <p>Python Foundation Program – Infosys Springboard</p>
+      <a href="Python_Foundation_Certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- ================= CONTACT ================= -->
   <section id="contact">
@@ -478,6 +522,7 @@
   </script>
 </body>
 </html>
+
 
 
 
